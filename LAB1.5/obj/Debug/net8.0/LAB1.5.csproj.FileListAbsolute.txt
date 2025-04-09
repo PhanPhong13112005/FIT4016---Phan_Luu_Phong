@@ -1,0 +1,14 @@
+E:\Học\CNTT17-03\Lession01\LAB1.5\bin\Debug\net8.0\LAB1.5.exe
+E:\Học\CNTT17-03\Lession01\LAB1.5\bin\Debug\net8.0\LAB1.5.deps.json
+E:\Học\CNTT17-03\Lession01\LAB1.5\bin\Debug\net8.0\LAB1.5.runtimeconfig.json
+E:\Học\CNTT17-03\Lession01\LAB1.5\bin\Debug\net8.0\LAB1.5.dll
+E:\Học\CNTT17-03\Lession01\LAB1.5\bin\Debug\net8.0\LAB1.5.pdb
+E:\Học\CNTT17-03\Lession01\LAB1.5\obj\Debug\net8.0\LAB1.5.GeneratedMSBuildEditorConfig.editorconfig
+E:\Học\CNTT17-03\Lession01\LAB1.5\obj\Debug\net8.0\LAB1.5.AssemblyInfoInputs.cache
+E:\Học\CNTT17-03\Lession01\LAB1.5\obj\Debug\net8.0\LAB1.5.AssemblyInfo.cs
+E:\Học\CNTT17-03\Lession01\LAB1.5\obj\Debug\net8.0\LAB1.5.csproj.CoreCompileInputs.cache
+E:\Học\CNTT17-03\Lession01\LAB1.5\obj\Debug\net8.0\LAB1.5.dll
+E:\Học\CNTT17-03\Lession01\LAB1.5\obj\Debug\net8.0\refint\LAB1.5.dll
+E:\Học\CNTT17-03\Lession01\LAB1.5\obj\Debug\net8.0\LAB1.5.pdb
+E:\Học\CNTT17-03\Lession01\LAB1.5\obj\Debug\net8.0\LAB1.5.genruntimeconfig.cache
+E:\Học\CNTT17-03\Lession01\LAB1.5\obj\Debug\net8.0\ref\LAB1.5.dll
