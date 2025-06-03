@@ -1,0 +1,41 @@
+﻿@model LAB5.Areas.Administrator.Models.User
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Areas/Administrator/Views/_Layout.cshtml";
+}
+
+<h2>Cập nhật danh sách</h2>
+
+<form asp-action="Edit" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label>Name</label>
+        <input asp-for="name" class="form-control" value="@Model.name" />
+        <span asp-validation-for="name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label>Progress (%)</label>
+        <input asp-for="progress" type="number" class="form-control" min="0" max="100" value="@Model.progress" />
+        <span asp-validation-for="progress" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label>Amount ($)</label>
+        <input asp-for="amount" type="number" step="0.01" class="form-control" value="@Model.amount" />
+        <span asp-validation-for="amount" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label>Deadline</label>
+        <input asp-for="deadline" type="date" class="form-control" value="@Model.deadline" />
+        <span asp-validation-for="deadline" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label>Image file name</label>
+        <input asp-for="image" class="form-control" value="@Model.image" />
+        <small class="form-text text-muted">Nhập tên file ảnh (vd: face1.jpg)</small>
+    </div>
+    <button type="submit" class="btn btn-primary">Cập Nhật</button>
+    <a asp-action="Index" class="btn btn-secondary" href="/Administrator/User/Index">Cancel</a>
+</form>
+
+
+
+

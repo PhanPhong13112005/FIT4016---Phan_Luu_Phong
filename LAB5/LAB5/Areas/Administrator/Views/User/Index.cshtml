@@ -1,0 +1,53 @@
+﻿@using LAB5.Areas.Administrator.Models
+@model List<User>
+@{
+	ViewData["Title"] = "Index";
+	Layout = "~/Areas/Administrator/Views/_Layout.cshtml";
+}
+<div class="col-lg-12 grid-margin stretch-card">
+	<div class="card">
+		<div class="card-body">
+			<h4 class="card-title">User Table</h4>
+			<div class="table-responsive">
+				<table class="table table-striped">
+						<tr>
+							<th>User</th>
+							<th>First name</th>
+							<th>Progress</th>
+							<th>Amount</th>
+							<th>Deadline</th>
+							<th>Actions</th>
+						</tr>
+					<tbody>
+						@foreach (User user in Model)
+						{
+							<tr>
+								<td class="py-1">
+									<img src="~/images/faces/@user.image"
+										 alt="image">
+								</td>
+								<td>@user.name</td>
+								<td>
+									<div class="progress">
+										<div class="progress-bar bg-success"
+											 role="progressbar" style="width: @user.progress%" aria-valuenow="@user.progress"
+											 aria-valuemin="0" aria-valuemax="@user.progress"></div>
+									</div>
+								</td>
+								<td>$ @user.amount</td>
+								<td>@user.deadline.ToString("MMMM dd, yyyy")</td>
+								<td>
+								<a asp-action="Add" href="/Administrator/User/Add" class="btn btn-danger mb-03">Thêm mới </a>
+									<a asp-action="Edit" href="/Administrator/User/Edit/@user.id" class="btn btn-primary">Sửa</a>
+									<a asp-action ="Delete" class="btn btn-primary" href="/Administrator/User/Delete/@user.id" onclick="return confirm('Xóa?')">Xóa</a>
+
+								</td>
+								</tr>
+						}
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
